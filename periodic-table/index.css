@@ -4,6 +4,9 @@
 #title {
   font-family: 'Futura', Arial, sans-serif;
 }
+#title-hr {
+  color: grey;
+}
 .element-container {
   height: 10em;
 }

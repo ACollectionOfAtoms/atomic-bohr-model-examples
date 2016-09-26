@@ -8,7 +8,9 @@ var atomConfig = {  //All atoms share this base-config
   nucleusColor: 'rgba(3, 169, 244, 0.2)',
   electronColor: 'rgba(24, 255, 255, 0.6)'
 }
-var speed = 80 // how fast the atoms come into existence
+var speed = 80, // how fast the atoms come into existence
+    myAtoms = []
+
 for (var i=1; i <= 118; i++) { // iterate over all existing atoms
   (function(i) {
     setTimeout(function() {
@@ -17,10 +19,10 @@ for (var i=1; i <= 118; i++) { // iterate over all existing atoms
       atomConfig.numElectrons = i
       atomConfig.idNumber = i
       atomConfig.containerId = `#bohr-container-${i}`
-      $(`#bohr-container-${i}`).append(`<div class='tooltip' id='tooltip-id-${i}'>`)
+      // $(`#bohr-container-${i}`).append(`<div class='tooltip' id='tooltip-id-${i}'>`)
       myAtoms.push(new Atom(atomConfig))
-      $(`#tooltip-id-${i}`).append(`<span class="tooltiptext" id='tooltip-text-${i}'>`)
-      $(`#tooltip-text-${i}`).text(myAtoms[myAtoms.length -1].wikiSummary)
+      // $(`#tooltip-id-${i}`).append(`<span class="tooltiptext" id='tooltip-text-${i}'>`)
+      // $(`#tooltip-text-${i}`).text(myAtoms[myAtoms.length -1].wikiSummary)
     }, i * speed);
   }(i));
 }
@@ -38,11 +40,11 @@ var rotationalPatterns = [
     'uniform',
   ],
   orbitalRotationConfig = {pattern:{preset:''}},
-  alternate = [true, false],
-  myAtoms = []
+  alternate = [true, false]
 // begin rotations after all have come into existene
 setTimeout(function() {
-  for (var j=117; j >= 0; j--) {
+  myAtoms.reverse();
+  for (var j=0; j <= 117; j++) {
     (function(j) {
       setTimeout(function() {
         var orbitalPattern = rotationalPatterns[getRandomInt(0,7)],
