@@ -37,8 +37,39 @@ a:hover {
   height: 18em;
   transition: 0.5s linear all;
 }
+
 .box-glow {
   -webkit-box-shadow: inset 3px 4px 71px 0px rgba(24,255,255,1);
   -moz-box-shadow: inset 3px 4px 71px 0px rgba(24,255,255,1);
   box-shadow: inset 3px 4px 71px 0px rgba(24,255,255,1);
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .element-container {
+    height: 70%;
+    width: 100%;
+    margin-top: -10%;
+    transition: 0.5s linear all;
+  }
+  .element-name {
+    margin-top: -20%;
+    color: white;
+  }
+  .atomic-details {
+    color: white;
+    margin-top: -10%;
+    width: 100%;
+    min-height: 100vh;
+    border-top: 1px solid white;
+    overflow-y: scroll;
+  }
+  #periodic-container {
+    height: 100%;
+    width: 100%;
+  }
+  #main {
+    height: 100vh;
+    width: 100vw;
+  }
 }
