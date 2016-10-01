@@ -89,7 +89,7 @@ if (!isMobile) {
   atomConfig.nucleusRadius = 80
   atomConfig.electronRadius = 5
   atomConfig.symbolOffset = 30
-  $('#periodic-container').append("<div class='col-sm-12'><h2 class='subdued'> (Tapping the atom generates a new, random one with a random preset rotational pattern) </h2></div>")
+  $('#periodic-container').append("<div class='col-sm-12'><h2 class='subdued'> (Tap the atom to generate a new one) </h2></div>")
   $('#periodic-container')
   .append(`<div class=\'col-sm-12 element-container\' id='bohr-container-1'></div>`);
   atomConfig.numElectrons = 1
