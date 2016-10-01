@@ -89,6 +89,7 @@ if (!isMobile) {
   atomConfig.nucleusRadius = 80
   atomConfig.electronRadius = 5
   atomConfig.symbolOffset = 30
+  $('#periodic-container').append("<div class='col-sm-12'><h2 class='subdued'> (Tapping the atom generates a new, random one with a random preset rotational pattern) </h2></div>")
   $('#periodic-container')
   .append(`<div class=\'col-sm-12 element-container\' id='bohr-container-1'></div>`);
   atomConfig.numElectrons = 1
@@ -115,8 +116,12 @@ if (!isMobile) {
     orbitalRotationConfig.pattern.clockwise = alternating
 
     newAtom.setNumElectrons(randInt());
-    $('.element-name').text(newAtom.elementName)
-    $('.atomic-details').text(newAtom.wikiSummary)
+    $('.element-name').animate({'opacity': 0}, 500, function() {
+      $(this).text(newAtom.elementName)
+    }).animate({'opacity': 1}, 500)
+    $('.atomic-details').animate({'opacity': 0}, 500, function() {
+      $(this).text(newAtom.wikiSummary)
+    }).animate({'opacity': 1}, 500)
     setTimeout(function() {
       newAtom.rotateOrbitals(orbitalRotationConfig)
     }, 1500)

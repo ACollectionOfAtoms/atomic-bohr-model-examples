@@ -46,15 +46,25 @@ a:hover {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .subdued {
+    color: grey;
+  }
   .element-container {
-    height: 70%;
+    height: 100vh;
     width: 100%;
     margin-top: -10%;
     transition: 0.5s linear all;
   }
+  h1 {
+    font-size: 6em;
+  }
+  h2 {
+    font-size: 3em;
+  }
   .element-name {
     margin-top: -20%;
-    color: white;
+    color: rgba(3, 169, 244, 0.7);
+    transition:color 1s ease;/*i just moved this from anchor*/
   }
   .atomic-details {
     color: white;
