@@ -1,40 +1,44 @@
 #main {
   background-color: black;
 }
+a {
+  color:  rgba(24,255,255,0.5);
+}
+a:hover {
+  color: white;
+}
+.close {
+  color:  rgba(24,255,255,0.5);
+  opacity: 1;
+}
 #title {
   font-family: 'Futura', Arial, sans-serif;
 }
-#title-hr {
-  color: grey;
+.modal-header {
+  color:  rgba(24,255,255,0.5);
+  border-color:  rgba(24,255,255,1);
+}
+.modal-footer {
+  border-color:  rgba(24,255,255,0);
+}
+.modal-content {
+  background-color: black;
+  color: white;
+  font-family: 'Futura', Arial, sans-serif;
+  box-shadow: 0 5px 15px  rgba(24,255,255,0.5);
+}
+#title {
+  color: white;
+}
+.clickable-atom {
+  cursor: pointer;
 }
 .element-container {
-  height: 10em;
+  height: 18em;
+  transition: 0.5s linear all;
 }
-.tooltip {
-    margin: 4em 0 0 4em;
-    width: 50%;
-    height: 50%;
-}
-
-/* Tooltip text */
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-
-    /* Position the tooltip text - see examples below! */
-    position: absolute;
-    margin-left: -60px;
-    left: 50%;
-    top: 100%;
-    z-index: 1;
-}
-
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-    visibility: visible;
+.box-glow {
+  -webkit-box-shadow: inset 3px 4px 71px 0px rgba(24,255,255,1);
+  -moz-box-shadow: inset 3px 4px 71px 0px rgba(24,255,255,1);
+  box-shadow: inset 3px 4px 71px 0px rgba(24,255,255,1);
 }

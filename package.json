@@ -4,7 +4,8 @@
   "description": "Examples using the d3.js atomic bohr model",
   "main": "index.js",
   "dependencies": {
-    "atomic-bohr-model": "^1.0.5"
+    "atomic-bohr-model": "^1.0.6",
+    "bootstrap": "^3.3.7"
   },
   "devDependencies": {},
   "scripts": {

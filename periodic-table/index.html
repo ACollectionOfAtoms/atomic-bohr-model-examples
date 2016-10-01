@@ -2,27 +2,46 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>title</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Atomic Bohr Model Example</title>
   </head>
 
   <body id='main'>
+    <!-- Modal info -->
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Modal Header</h4>
+          </div>
+          <div class="modal-body">
+            <p class='wiki-summary'></p>
+            <p> More information at <a href=''> Wikipedia.org</a> </p>
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Main container -->
     <div id='periodic-container' class="container">
 
     <div class='col-md-12'>
-      <h1 id='title'> Atomic Bohr Model </h1>
+      <h1 id='title'> Atomic Bohr Model Example </h1>
     </div>
 
     </div>
   </body>
   <!-- bootstrap -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
   <!-- atomic-bohr-model-->
   <script type="text/javascript" src="../node_modules/atomic-bohr-model/dist/atomicBohrModel.min.js" charset="utf-8"></script>
+  <!-- Example -->
+  <link rel="stylesheet" type="text/css" href="index.css">
   <script type="text/javascript" src="./index.js"></script>
 
 </html>
