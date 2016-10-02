@@ -53,7 +53,7 @@ if (!isMobile) {
           $atom.attr('data-toggle', 'modal')
           $atom.attr('data-target', '.bs-example-modal-lg')
           $('.modal-title').text(newAtom.elementName)
-          $('.wiki-url').text(newAtom.wikiUrl)
+          $('.wiki-url').attr('href', newAtom.wikiUrl)
           $('.wiki-summary').text(newAtom.wikiSummary)
         })
         myAtoms.push(newAtom)
